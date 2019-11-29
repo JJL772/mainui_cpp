@@ -27,8 +27,12 @@ inline bool isrange( T min, T value, T max )
 { return (((value) >= (min))) && (((value) <= (max))); }
 
 #define bound( min, num, max )	((num) >= (min) ? ((num) < (max) ? (num) : (max)) : (min))
+#ifndef Q_min
 #define Q_min( a, b ) (((a) < (b)) ? (a) : (b))
+#endif
+#ifndef Q_max
 #define Q_max( a, b ) (((a) < (b)) ? (b) : (a))
+#endif
 
 #define SetBits( iBitVector, bits )	((iBitVector) = (iBitVector) | (bits))
 #define ClearBits( iBitVector, bits )	((iBitVector) = (iBitVector) & ~(bits))
