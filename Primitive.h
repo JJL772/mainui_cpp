@@ -34,9 +34,9 @@ inline bool isrange( T min, T value, T max )
 #define Q_max( a, b ) (((a) < (b)) ? (b) : (a))
 #endif
 
-#define SetBits( iBitVector, bits )	((iBitVector) = (iBitVector) | (bits))
-#define ClearBits( iBitVector, bits )	((iBitVector) = (iBitVector) & ~(bits))
-#define FBitSet( iBitVector, bit )	((iBitVector) & (bit))
+//#define SetBits( iBitVector, bits )	((iBitVector) = (iBitVector) | (bits))
+//#define ClearBits( iBitVector, bits )	((iBitVector) = (iBitVector) & ~(bits))
+//#define FBitSet( iBitVector, bit )	((iBitVector) & (bit))
 
 // engine constants
 enum
