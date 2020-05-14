@@ -91,7 +91,7 @@ def build(bld):
 
 		if bld.env.DEST_OS == 'linux':
 				libs += ['RT']
-		libs += ['mathlib']
+		libs += ['mathlib', 'miniutl' ]
 		
 		source = bld.path.ant_glob([
 				'*.cpp',
@@ -114,7 +114,8 @@ def build(bld):
 				'../engine',
 				'../pm_shared',
 				'..',
-				'../mathlib'
+				'../mathlib',
+				'../miniutl'
 		]
 
 		bld.shlib(
